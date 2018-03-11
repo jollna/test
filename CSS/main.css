@@ -21,31 +21,38 @@ a:hover{
 .header_box{
     background: #ffffff;
     width:100%;
-    height:80px;
+    height:65px;
     position:fixed;
     top:0;
     left:0;
     z-index:9999;
+    box-shadow: 0 0 3px 1px #aaaaaa;
 }
 
 .left img,
 .left_box,
 .ul-box li{
+
     background: #ffffff;
 }
 
 .left_box {
-    margin: 20px;
+    position:relative;
+    left:20%;
+    float:left;
+    margin: 10px;
     float: left;
 }
 
 .ul-box{
+    position:relative;
+    left:20%;
     margin: 20px 40px;
     float: left;
 }
 
 .ul li{
-    padding: 10px 10px;
+    /*padding: 10px 0px;*/
     float: left;
     list-style: none;
 }
@@ -172,6 +179,48 @@ a:hover{
 .xiangxi:hover{
     transform: translate(0, -4px);
     box-shadow:0px 5px  5px 5px #dddddd ;
+}
+
+
+.dropdown {
+/*display:inline-block将对象呈递为内联对象，但是对象的内容作为块对象呈递。旁边的内联对象会被呈递在同一行内，允许空格。*/
+    display: inline-block;
+    background: #ffffff;
+}
+
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222222;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.ul-box a{
+    padding: 20px 20px;
+}
+
+.dropdown-content a {
+    display: block;
+    color: black;
+    padding: 10px 15px;
+    text-decoration:none;
+}
+
+
+
+.ul-box a:hover,
+.dropdown-content a:hover {
+    background: #999999;
+    color: rgb(255,255,255);
+}
+
+
+.dropdown:hover .dropdown-content{
+    display: block;
 }
 
 @keyframes banner {
