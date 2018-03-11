@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: rgb(242, 242, 242);
+    font-family: "Helvetica", arial, "Microsoft Yahei", "微软雅黑";;
+
+}
+
+a{
+    color: #111111;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    background: #ffffff;
+}
+
+a:hover{
+    color: rgb(253, 112, 61);
+}
+
+.header_box{
+    background: #ffffff;
+    width:100%;
+    height:80px;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:9999;
+}
+
+.left img,
+.left_box,
+.ul-box li{
+    background: #ffffff;
+}
+
+.left_box {
+    margin: 20px;
+    float: left;
+}
+
+.ul-box{
+    margin: 20px 40px;
+    float: left;
+}
+
+.ul li{
+    padding: 10px 10px;
+    float: left;
+    list-style: none;
+}
+
+.tupiangundong-box{
+    width:100%;
+    height: 400px;
+    overflow: hidden;
+
+}
+
+.img_warp{
+    width: 400%;
+    height: 400px;
+    animation: banner 20s infinite;
+    overflow: hidden;
+    position: inherit;
+}
+
+.img_warp img{
+    width: 25%;
+    float: left;
+}
+
+.main_catalog{
+    margin:0 auto;
+    width: 1180px;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_catalog_li{
+    width: 177px;
+    height: 59px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-around;
+    border: 1px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 1px #eeeeee;
+}
+
+.main_catalog a{
+    background: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 59px;
+    display: flex;
+    justify-content: center;
+    -moz-transition: all 400ms ease-in-out;
+}
+
+.main_catalog a img{
+    height: 30px;
+    margin: 13px 0px;
+    background: #ffffff;
+    padding: 0 6px;
+}
+
+.main_catalog a:hover {
+    background:rgb(33, 173, 130) ;
+    color: #ffffff;
+}
+
+.mian_contenr{
+    margin:0 auto;
+    width: 1180px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.xiangxi_box{
+    height: 180px;
+    padding: 10px 10px;
+    background: #ffffff;
+}
+
+.xiangxi{
+    margin: 0 0 ;
+    box-shadow:0px 1px  1px 2px #eeeeee ;
+    -moz-transition: all 300ms ease-out;
+}
+
+.xiangxi_img{
+    width: 280px;
+    height: 210px;
+}
+
+.xiangxi p,
+.name,
+.laoshi,
+.fenlei,
+.jibie
+{
+    padding: 3px 3px;
+    background: #ffffff;
+}
+
+.fenlei,
+.jibie,
+.time {
+    font-size: 12px;
+    display: block;
+    /*float: left;*/
+    /*padding: 5px 5px;*/
+}
+
+.leimu{
+    display: block;
+}
+.jiage,
+.renshu{
+    float: right;
+}
+
+.biaoqian{
+    display: block;
+}
+
+.xiangxi:hover{
+    transform: translate(0, -4px);
+    box-shadow:0px 5px  5px 5px #dddddd ;
+}
+
+@keyframes banner {
+    0%{
+        transform: translate(0,0);
+    }
+    23.75%{
+        transform: translate(0,0);
+    }
+    28.75%{
+        transform: translate(-25%,0);
+    }
+    47.5%{
+        transform: translate(-25%,0);
+    }
+    52.5%{
+        transform: translate(-50%,0);
+    }
+    71.25%{
+        transform: translate(-50%,0);
+    }
+    76.25%{
+        transform: translate(-75%,0);
+    }
+    95%{
+        transform: translate(-75%,0);
+    }
+
+    100%{
+        transform: translate(0%,0);
+    }
+}
